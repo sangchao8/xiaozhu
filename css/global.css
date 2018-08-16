@@ -1,0 +1,146 @@
+/*公共类*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    /*版心 提取 */
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+
+/*--head开始--*/
+.headNav,
+.headNav-ul,
+.logging,
+.headNav-ul>li{
+    display: inline-block;
+}
+.headNav-ul{
+    font-size: 0;
+}
+.head{
+    border-bottom: 1px solid #eeeeee;
+}
+.head-w{
+    position: relative;
+    padding-top: 22px;
+    padding-bottom: 30px;
+  
+}
+.headNav{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.headNav-ul>li>a{
+    display: block;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #818ba3;
+    font-family: "Microsoft Yahei";
+    margin-top: 22px;
+    margin-right: 10px;
+}
+.headNav-ul>li>a:hover{
+    color: #0276E5;
+}
+.headNav-ul>li>a.on{
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+    color: #ffffff;
+}
+.logging{
+    font-size: 16px;
+    vertical-align: -1px;
+    margin-left: 60px;
+}
+.logging>a{
+    padding: 5px 10px;
+}
+.logging>a.on{
+    border-radius: 5px;
+    background-color: #FD9A01;
+    color: #ffffff;
+}
+.logging>a{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    vertical-align: 2px;
+}
+.logging>a:last-child{
+    position: relative;
+}
+
+
+/*--foot开始--*/
+.foot{
+    padding: 30px 0 15px 0;
+    background-color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+.foot-link{
+    text-align:  center;
+    display: inline-block;
+}
+.foot-link td{
+    padding: 0 75px 29px 0px;
+}
+.erweima{
+    display: inline-block;
+    margin-left: 25px;
+}
+.erweima>img{
+    width: 120px;
+    height: 120px;
+}
+.erweima>p{
+    color: white;
+}
+.foot-link .blod{
+    font-weight: 600;
+    font-size: 14px;
+    color: #e0dede;
+}
+.color2{
+    color: rgba(255, 255, 255, 0.9);
+}
+.color2:hover{
+    color: rgba(255, 255, 255, 0.91);
+}
+.color3{
+    color: rgba(255, 255, 255, 0.7);
+}
+.color3:hover{
+    color: rgba(255, 255, 255, 0.7);
+}

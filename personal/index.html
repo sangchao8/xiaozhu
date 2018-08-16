@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小猪返利wo</title>
+    <link rel="icon" href="../main/image/bitbug_favicon.ico" type="image/x-icon">
+    <script src="../lib/shim/es5-shim.js"></script>
+    <script src="../lib/shim/es5-sham.js"></script>
+    <script src="../lib/jquery-1.11.1.min.js"></script>
+    <script src="../lib/template-web.js"></script>
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <script src="../lib/layui/layui.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js"></script>
+    <script id="balance" type="text/html">
+        <div class="iframe-content">
+            <div class="iframe-content-t">
+                <p>{{$data.zzc}}</p>
+                <p>总资产（元）</p>
+            </div>
+            <div class="iframe-content-c">
+                <div class="iframe-content-item">
+                    <p>{{$data.ljfl}}</p>
+                    <p>累计返利金额</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p>{{$data.dfl}}</p>
+                    <p>待返利金额</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p>{{$data.sj}}</p>
+                    <p>赏金</p>
+                </div>
+                <input type="button" value="提现" class="iframe-content-buttom js-text-r-f-but" name="withdraw" submitId="ye">
+            </div>
+        </div>
+    </script>
+
+    <script id="bind-account" type="text/html">
+        <div class="iframe-content">
+            <form id="bind-form1">
+                <div class="iframe-content-id">
+                    身份证:
+                    <input name="sfz" type="text">
+                </div>
+                <div class="iframe-content-id">
+                    收款人:
+                    <input name="skr" type="text">
+                </div>
+                <div class="iframe-content-id">
+                    支付宝/
+                    <span>银行账户:</span>
+                    <input name="zh" type="text">
+                </div>
+                <div class="iframe-content-id">
+                    <s>密码:</s>
+                    <input name="mm" type="text">
+                </div>
+                <input type="button" value="确定" class="iframe-content-buttom js-text-r-f-but" submitId="bd" name="withdraw">
+            </form>
+        </div>
+    </script>
+
+    <script id="accumulative-integral" type="text/html">
+        <div class="iframe-content">
+            <div class="iframe-content-t">
+                <span class="iframe-content-span">{{$data.jf}}</span>
+                <span>积分</span>
+            </div>
+            <div class="iframe-content-c">
+                <div class="iframe-content-item">
+                    <p>{{$data.jddq}}</p>
+                    <p>季度到期积分</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p>{{$data.yqlj}}</p>
+                    <p>邀请累计积分</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p>{{$data.tzlj}}</p>
+                    <p>投资累计积分</p>
+                </div>
+            </div>
+            <input type="button" value="提现" class="iframe-content-buttom js-text-r-f-but" submitId="lj" name="withdraw">
+        </div>
+    </script>
+
+    <script id="Submission-system" type="text/html">
+        <form id="bind-form2" class="layui-form">
+            <table class="submit-from">
+                <tr class="item">
+                    <td >选择公司：</td>
+                    <td>
+                        <select name="xzgs" >
+                            <option value="" >请选择一个公司</option>
+                            <option value="01">合时代</option>
+                            <option value="02">银财富</option>
+                            <option value="03">国贷网</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>投资方式：</td>
+                    <td>
+                        <select class='Submission-system-inputui' name="xztz">
+                            <option value="" >请选择投资方式</option>
+                            <option value="01">短期投</option>
+                            <option value="02">定期投</option>
+                            <option value="03">长期投</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>手机号：</td>
+                    <td>
+                        <input type="text" name="tzgsh" class='Submission-system-input' placeholder="(所投资/购买产品公司的注册号)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>金额：</td>
+                    <td>
+                        <input type="text" name="tzje" class='Submission-system-input' placeholder="(所投资/购买金额)">
+                    </td>
+                </tr>
+                <tr>
+                    <td >上传投资/购买截图:</td>
+                    <td class="submit-from-item">
+                            <span>
+                                选择文件
+                            </span>
+                        <input class='input-l' type="file" name="sbmitText">
+                    </td>
+                </tr>
+            </table>
+            <div class="submit-from-img"></div>
+            <div class="submit-from-submit js-text-r-f-but" submitId="jd" name="Submission-system-submit">
+                提交
+            </div>
+        </form>
+    </script>
+
+    <script id="red-packet" type="text/html">
+        <div class="iframe-content">
+            <div class="iframe-content-c">
+                <div class="iframe-content-item">
+                    <p class="red-packet-p">累计返利金额</p>
+                    <p>{{$data.ljfl}}</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p class="red-packet-p">待返利金额</p>
+                    <p>{{$data.dfl}}</p>
+                </div>
+            </div>
+            <div class="iframe-content-img">
+                <span>
+                    <s>1</s>
+                    元
+                </span>
+                <span>
+                    <s>10</s>
+                    元
+                </span>
+                <span>
+                    <s>3</s>
+                    元
+                </span>
+                <span>
+                    <s>20</s>
+                    元
+                </span>
+                <span>
+                    <s>5</s>
+                    元
+                </span>
+                <span>
+                    <s>30</s>
+                    元
+                </span>
+            </div>
+        </div>
+    </script>
+
+    <script id="Business-services" type="text/html">
+        <div class="iframe-content">
+            <div class="iframe-content-c">
+                <div class="iframe-content-item">
+                    <p class="red-packet-p">累计返利金额</p>
+                    <p>{{$data.ljfl}}</p>
+                </div>
+                <div class="iframe-content-item">
+                    <p class="red-packet-p">待返利金额</p>
+                    <p>{{$data.dfl}}</p>
+                </div>
+            </div>
+            <div class="iframe-content-img">
+                <span>
+                    <s>1</s>
+                    元
+                </span>
+                <span>
+                    <s>10</s>
+                    元
+                </span>
+                <span>
+                    <s>3</s>
+                    元
+                </span>
+                <span>
+                    <s>20</s>
+                    元
+                </span>
+                <span>
+                    <s>5</s>
+                    元
+                </span>
+                <span>
+                    <s>30</s>
+                    元
+                </span>
+            </div>
+        </div>
+    </script>
+
+    <script id="invite-friends" type="text/html">
+        <form id="copyFrom" >
+            <div class="iframe-content">
+                <div class="invite-friends-head">
+                    <p>邀请码：
+                        <s>{{$data.aa}}</s>
+                    </p>
+                    <p>邀请方式：
+                        <s>{{$data.bb}}</s>
+                    </p>
+                    <p class="invite-friends-state">将带有邀请链接的地址发送给好友，好友完成注册且投资，您将获得奖励</p>
+                    <div class="invite-friends-foot">
+                        <input type="text">
+                        <input class="copay" type="button" value="复制链接">
+                    </div>
+                </div>
+                <div class="invite-record-box">
+                    <p class="invite-record">邀请记录</p>
+                    <table class="invite-friends-text">
+                        <tr class="invite-record-h">
+                            <td>用户名</td>
+                            <td>注册时间</td>
+                            <td>状态</td>
+                        </tr>
+                        {{each $data.content}}
+                        <tr>
+                            <td>{{$value.text}}</td>
+                            <td>{{$value.date}}</td>
+                            <td>{{$value.status}}</td>
+                        </tr>
+                        {{/each}}
+                    </table>
+                    <div class="invite-record-page js-invite-record-page" currPage="{{$data.pager.pageNum}}">
+                                <span >
+                                    <s>{{$data.pager.pageNum}}</s>/
+                                    <s>{{$data.pager.pageCount}}</s>
+                                </span>
+                        <span class="invite-record-page-num">
+                                    <i class="js-pre-page" ><</i>
+                                    {{$data.pager.pageNum}}
+                                    <i class="js-next-page">></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </script>
+    <script>
+        $(function(){
+            head.init();
+            main.into();
+        });
+    </script>
+</head>
+<body>
+    <!--head开始-->
+    <div class="head">
+        <div class="w head-w">
+            <img src="../main/image/logo.jpg">
+            <div class="headNav">
+                <ul class="headNav-ul js-headNav-ul">
+                    <li class="js-headNav-li">
+                        <a href="../main/index.html">首页</a>
+                    </li>
+                    <li class="js-headNav-li">
+                        <a href="../zhuanQu/index.html"> 理财专区</a>
+                    </li>
+                    <li class="js-headNav-li">
+                        <a href="../jifen/index.html">积分商城</a>
+                    </li>
+                    <li class="js-headNav-li">
+                        <a href="../ours/index.html">关于我们</a>
+                    </li>
+                    <li class="js-headNav-li">
+                        <a href="../personal/index.html"  class="on"> 个人中心</a>
+                    </li>
+                </ul>
+                <div class="logging">
+                    <a href="../logging/index.html">登录</a>/
+                    <a href="../sign/index.html">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--head结束-->
+    <!--content开始-->
+    <div class="content">
+        <div class="content-title">
+            我的账户
+        </div>
+        <div class="content-tab">
+            <ul class="le-ul js-personal-tab">
+                <li data-temp-id="balance" data-url="json/balance.json" class="on">账户余额</li>
+                <li data-temp-id="bind-account" data-url="" class="on">账户绑定</li>
+                <li data-temp-id="accumulative-integral" data-url="json/accumulative.json">累计积分</li>
+                <li data-temp-id="Submission-system" data-url="">交单系统</li>
+                <li data-temp-id="red-packet" data-url="json/red.json">红包</li>
+                <li data-temp-id="Business-services" data-url="" >商家服务</li>
+                <li data-temp-id="invite-friends" data-url="json/yqjl.json">邀请好友</li>
+            </ul>
+            <div class="rg js-persional-main ">
+
+            </div>
+        </div>
+    </div>
+    <!--jf-dh-fixed开始-->
+    <div class="lc-fx-fixed js-lc-fx-fixed">
+        <div class="jf-dh-pop dh-pop" submitId="ye">
+            <p>提现</p>
+            <p class="dh-pop-p">账户现金余额：
+                <s class="js-dh-pop-s">300</s>
+            </p>
+            <div class="submit-from">
+                <span>提现金额：</span>
+                <div class="submit-from1">
+                    <input type="text" name="company" >
+                </div>
+            </div>
+            <div class="lc-fx-pop-buttom js-text-r-f-but-1" submitId="ts">
+                申请提现
+            </div>
+            <div class="takeOut ">
+                <p>1、我们将在1个工作日内（除双休日和法定节假日外），将提现现金转入您绑定的银行卡中，实际到账时间依据存管方及提现银行而有所差异。</p>
+                <p>2、平台禁止洗钱、信用卡套现等行为，平台有权拒绝信用卡充值以及无投资账户的提现申请。</p>
+            </div>
+        </div>
+        <div class="takeSuccse take js-takeSuccse" submitId="bd">
+        </div>
+        <div class="takeSuccse ban js-banSuccse" submitId="lj">
+        </div>
+        <div class="takeSuccse submit js-banSuccse" submitId="jd">
+        </div>
+        <div class="takeSuccse submit take-1" submitId="ts">
+        </div>
+    </div>
+   <!-- <div class="lc-fx-fixed js-lc-fx-fixed">
+        <div class="jf-dh-pop dh-pop" submitId="1">
+            <p>提现</p>
+            <p class="dh-pop-p">账户现金余额：
+                <s>2.25</s>
+            </p>
+            <div class="submit-from">
+                <span>提现金额：</span>
+                <div class="submit-from1">
+                    <input type="text" name="company" >
+                </div>
+            </div>
+            <div class="lc-fx-pop-buttom js-lc-fx-pop-buttom">
+                申请提现
+            </div>
+            <div class="takeOut ">
+                <p>1、我们将在1个工作日内（除双休日和法定节假日外），将提现现金转入您绑定的银行卡中，实际到账时间依据存管方及提现银行而有所差异。</p>
+                <p>2、平台禁止洗钱、信用卡套现等行为，平台有权拒绝信用卡充值以及无投资账户的提现申请。</p>
+            </div>
+        </div>
+        <div class="takeSuccse js-takeSuccse" submitId="1">
+        </div>
+        <div class="takeSuccse ban js-banSuccse" submitId="2">
+        </div>
+    </div>-->
+    <!--jf-dh-fixed结束-->
+
+    <!--content结束-->
+    <!--foot开始-->
+    <!--foot结束-->
+</body>
+
+</html>

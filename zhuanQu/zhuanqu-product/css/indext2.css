@@ -1,0 +1,259 @@
+
+/*--lc-fx-content开始 合时代理财--*/
+.fx-content-t{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.fx-content-t>a{
+    color: #333;
+}
+.fx-content-t>a.fx-content-t-a{
+    color: #F46B11;
+}
+/*.fx-content-t-product{*/
+/*!*display: inline-block;*!*/
+/*text-align: center;*/
+/*}*/
+.fx-content-t-product-p{
+    background-color:#F46B11;
+    /* line-height: 90px; */
+    color: #fff;
+    font-size: 23px;
+    margin-top: 30px;
+    text-align:  center;
+    padding: 15px 0;
+    line-height: 30px;
+}
+.fx-content-t-product-text{
+    padding: 20px 0;
+    border: 1px solid #D2D2D2;
+    border-top: none;
+    box-sizing: border-box;
+    
+}
+.product-text-l{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 30px;
+    border-right:  1px solid #D2D2D2;
+    vertical-align: top;
+    width:  246px;
+    box-sizing:  border-box;
+}
+.product-text-l>img{
+    width: 120px;
+    height: 30px;
+    padding-left:  20px;
+}
+.text-l-adp{
+    white-space: pre;
+}
+.product-text-r{
+    font-size: 16px;
+    display: inline-block;
+}
+.text-r-t-1{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin: 52px 0;
+    padding: 0 72px;
+    position: relative;
+}
+.text-r-t-1:not(:first-child):before{
+    content: '';
+    width: 1px;
+    height: 125px;
+    background-color:#D2D2D2;
+    display:  inline-block;
+    position:  absolute;
+    top: -52px;
+    left: -5px;
+}
+.text-r-t-1:last-child{
+    padding-right: 0;
+}
+.text-r-t-1-2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f10215;
+}
+.text-r-f-but{
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+    padding:  0 10px;
+    margin-right: 60px;
+    width:  204px;
+    cursor:  pointer;
+}
+.text-r-f-but:hover{
+    color: white;
+}
+.product-text-r-f{
+    text-align: center;
+}
+
+/*--lc-fx-content开始 返利总方案--*/
+.fx-content-t-product-p>s:nth-child(2){
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+}
+.fx-content-table{
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid  #E6E6E6;
+    border-top: none;
+}
+.fx-content-table tr{
+    border-bottom: 1px solid #E6E6E6;
+}
+.fx-tr{
+    background-color: #ffd2b5;
+    color: #ec5934;
+}
+.fx-hint-f{
+    font-size:18px;
+}
+.fx-hint{
+    line-height: 25px;
+    padding: 30px 80px;
+    box-sizing:  border-box;
+    border:  1px solid #E6E6E6;
+    border-top:  none;
+}
+.fx-content-step{
+    display: inline-block;
+    text-align: center;
+    padding: 50px 69px;
+}
+.fx-content-step:nth-of-type(5n+5){
+    padding-right:0;
+}
+.fx-step{
+    border: 1px solid  #E6E6E6;
+    border-top: none;
+    box-sizing:  border-box;
+}
+.fx-border-b{
+    border-bottom: none;
+}
+.fx-hint.fx-red{
+    color: #f10215;
+}
+.fx-tb-w{
+    width: 200px;
+    
+}
+.fx-content-table td:nth-of-type(2n+1){
+    text-align: right;
+}
+.fx-content-table td:nth-of-type(2n+2){
+    text-align: left;
+    text-indent: 25px;
+}
+.fx-content-step p:not(:first-child){
+    font-size: 14px;
+}
+.fx-content-step p:nth-of-type(1){
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+/*--lc-fx-fixed开始--*/
+.lc-fx-fixed{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(189, 189, 189)\9;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align:  center;
+    display:  none;
+}
+.lc-fx-pop-i{
+    margin: 30px 0;
+    text-align:  center;
+}
+.lc-fx-pop-i>s{
+    width: 263px;
+    height: 50px;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: -17px;
+}
+.lc-fx-pop-i>s.lc-fx-pop-s{
+    background-size: cover;
+    background-image: url("../../image/logo.jpg");
+    background-position: top 0 left -6px;
+}
+.lc-fx-pop-i>s.lc-fx-pop-s2{
+    background-image: url("../../image/pro5.png");
+}
+.lc-fx-pop{
+    display: inline-block;
+    background-color:  white;
+    padding: 30px;
+    margin-top: 80px;
+}
+.pop-login{
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin:  0 10px;
+}
+.pop-dot{
+    opacity: 0.7;
+}
+.pop-dot-item{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #666666;
+    border-radius: 50%;
+    margin:0 2px;
+}
+.lc-fx-pop-text{
+    color: #333;
+    font-size: 16px;
+    letter-spacing:  1.5px;
+    display:  inline-block;
+    width: 635px;
+    line-height: 25px;
+    text-align: left;
+}
+.lc-fx-pop-text>s   {
+    color: #f10215;
+}
+.lc-fx-pop-buttom{
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+    padding: 0 10px;
+    margin: 50px auto;
+    width: 204px;
+    cursor: pointer;
+}

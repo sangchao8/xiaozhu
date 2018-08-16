@@ -1,0 +1,266 @@
+
+/*--shuffling开始--*/
+.content{
+    background-color: #F4F4F4;
+}
+.address{
+}
+.address-text{
+    font-size: 0;
+    padding: 6px 0;
+}
+.address-text>span{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.address-text>span:nth-of-type(2)>a{
+    color: #FAAF3A;
+}
+.address-text>span:nth-of-type(2):before{
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    content: "";
+    background-image: url("../image/path-split.png");
+    position: relative;
+    left: -7px;
+    top: 2px;
+}
+.address-Filter-box{
+    padding: 20px;
+    background-color: white;
+}
+.address-Filter{
+    font-size: 16px;
+    padding: 10px 0;
+}
+.address-Filter-a{
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.address-Filter-a.on{
+    color: white;
+    background: linear-gradient(#ffd622, #fd8810);
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+}
+
+
+/*--recommend-product开始--*/
+.recommend-product{
+    font-size: 0;
+    padding: 40px 0;
+}
+.recommend-product-list-top>p{
+    text-align: center;
+}
+.recommend-product-list-a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 37px 90px 10px 90px;
+    background-color:  white;
+}
+.recommend-product-a:first-child .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian1.png");
+}
+.recommend-product-a:nth-of-type(2) .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian2.png");
+}
+.recommend-product-a:nth-of-type(3) .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian3.png");
+}
+.recommend-product-a:nth-of-type(4) .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian4.png");
+}
+.recommend-product-a:nth-of-type(5) .recommend-product-list-a{
+    background-image: url("../../main/image/shoutou3.png");
+}
+.recommend-product-a:nth-of-type(6) .recommend-product-list-a{
+    background-image: url("../../main/image/shoutou4.png");
+}
+.recommend-product-a:nth-of-type(7) .recommend-product-list-a{
+    background-image: url("../../main/image/futou3.png");
+}
+.recommend-product-a:nth-of-type(8) .recommend-product-list-a{
+    background-image: url("../../main/image/futou4.png");
+}
+.recommend-product-a:nth-of-type(9) .recommend-product-list-a{
+    background-image: url("../image/pro1.png");
+}
+.recommend-product-a:nth-of-type(10) .recommend-product-list-a{
+    background-image: url("../image/pro2.png");
+}
+.recommend-product-a:nth-of-type(11) .recommend-product-list-a{
+    background-image: url("../image/pro4.png");
+}
+.recommend-product-a:nth-of-type(12) .recommend-product-list-a{
+    background-image: url("../image/pro5.png");
+}
+.recommend-product-a:nth-of-type(13) .recommend-product-list-a{
+    background-image: url("../image/pro6.png");
+}
+.recommend-product-a:nth-of-type(14) .recommend-product-list-a{
+    background-image: url("../image/pro7.png");
+}
+.recommend-product-a:nth-of-type(15) .recommend-product-list-a{
+    background-image: url("../image/pro8.png");
+}
+.recommend-product-a:nth-of-type(16) .recommend-product-list-a{
+    background-image: url("../image/pro9.png");
+}
+.recommend-product-a:nth-of-type(17) .recommend-product-list-a{
+    background-image: url("../image/pro10.png");
+    background-color: #ffd87b;
+}
+
+.recommend-product-a:first-child+a .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian2.png")\9;
+}
+.recommend-product-a:first-child+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian3.png")\9;
+}
+.recommend-product-a:first-child+a+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/tuijian4.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/shoutou3.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/shoutou4.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/futou3.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../../main/image/futou4.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro1.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro2.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro4.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro5.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro6.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro7.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro8.png")\9;
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro9.png")\9
+}
+.recommend-product-a:first-child+a+a+a+a+a+a+a+a+a+a+a+a+a+a+a+a .recommend-product-list-a{
+    background-image: url("../image/pro10.png")\9;
+    background-color: #ffd87b;
+}
+.recommend-product-list{
+    position: relative;
+    display:  inline-block;
+    text-align:  center;
+    overflow:  hidden;
+}
+.recommend-product-a{
+    display: inline-block;
+    margin-right: 24px;
+    border: 1px solid #FAD6CB;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+}
+.recommend-product-a:hover{
+    box-shadow: 0 0 17px 3px #F3816C;
+}
+.recommend-product-a:nth-of-type(4n+4){
+    margin-right:  0;
+}
+.recommend-product-a.last{
+    margin-right:  0;
+}
+.recommend-product-a.mag20{
+    margin: 20px 24px 20px 0;
+}
+.recommend-product-list:before{
+    content: "推荐";
+    position: absolute;
+    top: 5px;
+    left: -32px;
+    color: white;
+    background-color: #f10215;
+    font-size: 16px;
+    font-weight: 800;
+    width: 100px;
+    padding: 2px;
+    transform: rotate(-45deg);
+    margin-left: 32px\9;
+    text-align: center\9;
+}
+.recommend-product-list-top{
+    display: inline-block;
+}
+.recommend-product-p{
+    white-space: nowrap;
+    color: #B7B7B7;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 14px;
+    line-height: 32px;
+}
+.recommend-product-list-table{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    table-layout: initial;
+}
+.recommend-product-list-table .b{
+    color:  #333;
+}
+.recommend-product-list-table .color{
+    color: #999;
+    padding-bottom: 15px;
+}
+.recommend-product-list-table .color>td{
+    padding-bottom: 18px;
+}
+.recommend-product-list-table .color>td.color-num{
+    font-size: 20px;
+    color: #FF3512;
+    padding-right: 16px;
+    width:  160px;
+    padding: 4px 0;
+}
+.recommend-product-list-table td{
+    padding: 4px 24px;
+}
+.recommend-product-list>button{
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    padding: 0px 80px;
+    margin-bottom: 10px;
+    cursor:  pointer;
+    background: linear-gradient(#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #ffd622, endColorstr = #fd8810);
+}
+.recommend-product-p.p1{
+    color: transparent;
+}

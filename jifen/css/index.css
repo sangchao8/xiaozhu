@@ -1,0 +1,166 @@
+/*--shuffling开始--*/
+.shuffling-box{
+    position: relative;
+}
+.shuffling{
+    position:  relative;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+.shuffling-div{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+    display: inline-block;
+}
+.shuffling-div.on{
+    display: inline-block;
+}
+.shuffling>div.shuffling-div{
+    background-image: url("../image/jf-img.jpg");
+}
+
+
+/*--integral开始--*/
+.recommend-box {
+    position: relative;
+    margin-top: 60px;
+}
+.recommend>p{
+    text-indent: 50px;
+}
+.recommend>p.recommend-p{
+    color: #E71600;
+    font-size: 24px;
+    letter-spacing: 3px;
+    display:  inline-block;
+}
+.recommend>p:nth-of-type(2){
+    white-space: pre;
+    letter-spacing: 2px;
+    color: gray;
+}
+.recommend.integral{
+    display: inline-block;
+}
+.more {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.recommend.integral:before{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "";
+    width: 38px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-image: url("../../main/image/integral.png");
+}
+.integral-product-list{
+    text-align:  center;
+    display:  inline-block;
+    padding: 4px 5px;
+    border: 1px solid #EEE;
+    margin-right: 90px;
+    cursor:  pointer;
+}
+.integral-product-list:nth-of-type(4n+4){
+    margin-right: 0;
+}
+.integral-product-list.last{
+    margin-right: 0;
+}
+.integral-product-list:hover{
+    box-shadow: 0 0 17px 3px #EEE;
+    color:  #898989;
+}
+.integral-product-list-img{
+    display: inline-block;
+    width: 180px;
+    height: 66px;
+    background-size: contain;
+    margin: 40px 20px;
+    background-repeat:no-repeat;
+    /* border: 1px solid  #E0E0E0; */
+}
+.integral-product-list:first-child .integral-product-list-img{
+    background-image: url("../../main/image/jifeng1.png");
+}
+.integral-product-list:nth-of-type(2) .integral-product-list-img{
+    background-image: url("../../main/image/jifeng2.png");
+}
+.integral-product-list:nth-of-type(3) .integral-product-list-img{
+    background-image: url("../../main/image/jifeng3.png");
+}
+.integral-product-list:nth-of-type(4) .integral-product-list-img{
+    background-image: url("../../main/image/jifeng4.png");
+}
+.integral-product-list:nth-of-type(5) .integral-product-list-img{
+    background-image: url("../image/img1.png");
+}
+.integral-product-list:nth-of-type(6) .integral-product-list-img{
+    background-image: url("../image/img2.png");
+}
+.integral-product-list:nth-of-type(7) .integral-product-list-img{
+    background-image: url("../image/img3.png");
+}
+
+s.integral-product-list-img {}
+.integral-product-list:nth-of-type(8) .integral-product-list-img{
+    background-image: url("../image/img4.png");
+}
+.integral-product-list:first-child+a .integral-product-list-img{
+    background-image: url("../../main/image/jifeng2.png");
+}
+.integral-product-list:first-child+a+a .integral-product-list-img{
+    background-image: url("../../main/image/jifeng3.png");
+}
+.integral-product-list:first-child+a+a+a .integral-product-list-img{
+    background-image: url("../../main/image/jifeng4.png");
+}
+.integral-product-list:first-child+a+a+a+a .integral-product-list-img{
+    background-image: url("../image/img1.png");
+}
+.integral-product-list:first-child+a+a+a+a+a .integral-product-list-img{
+    background-image: url("../image/img2.png");
+}
+.integral-product-list:first-child+a+a+a+a+a+a .integral-product-list-img{
+    background-image: url("../image/img3.png");
+}
+.integral-product-list:first-child+a+a+a+a+a+a+a .integral-product-list-img{
+    background-image: url("../image/img4.png");
+}
+.integral-product-list-p{
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+.integral-product-list-num>span{
+    font-size: 14px;
+    line-height: 40px;
+}
+.integral-product-list-num>span:nth-of-type(2){
+    margin-right: 20px;
+}
+.integral-product-list-num>span:nth-of-type(1),
+.integral-product-list-num>span:nth-of-type(2){
+    color: #E44D30;
+}
+.integral-product{
+    margin: 25px auto 100px;
+    font-size:  0;
+}
+.integral-product-list.mag20{
+    margin-top: 20px;
+}
+
+

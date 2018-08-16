@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小猪返利wo</title>
+    <link rel="icon" href="../main/image/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../lib/shim/es5-shim.js"></script>
+    <script src="../lib/shim/es5-sham.js"></script>
+    <script src="../lib/jquery-1.11.1.min.js"></script>
+    <script src="../lib/template-web.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            head.init();
+            main.into();
+        });
+    </script>
+    <script id="ours-intro" type="text/html">
+        <div class="shuffling-box">
+            <div class="shuffling js-shuffling">
+                <div class="shuffling-div on js-shuffling-div"></div>
+            </div>
+        </div>
+        <div class="content">
+            <span class="content-text">
+                <s class="content-text-s">公司简介</s>
+                <i class="content-text-i">小猪返利基于网贷平台给用户的正常投资回报以上，再叠加额外的返利给用户，
+使得用户的投资收益率最大化，深受用户喜爱。</i>
+            </span>
+            <img class="content-img" src="image/lc.jpg">
+        </div>
+    </script>
+
+    <script id="ours-gg" type="text/html">
+        <div class="w ours-notice">
+            <p class="ours-notice-p">网站公告</p>
+            <div class="invite-record-box">
+                <table class="invite-friends-text">
+                    {{each $data.content}}
+                    <tr>
+                        <td class="invite-friends-long">{{$value.text}}</td>
+                        <td>{{$value.date}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+            <div class="invite-record-page js-invite-record-page" currPage="{{$data.pager.pageNum}}">
+                                <span>
+                                    <s>{{$data.pager.pageNum}}</s>/
+                                    <s>{{$data.pager.pageCount}}</s>
+                                </span>
+                <span class="invite-record-page-num">
+                                    <i class="js-pre-page"><</i>
+                                    {{$data.pager.pageNum}}
+                                    <i class="js-next-page">></i>
+                                </span>
+            </div>
+        </div>
+    </script>
+    <script id="ours-qs" type="text/html">
+        <div>
+            <div class="w ours-notice">
+                <p class="ours-notice-p">常见问题</p>
+                <div class="ours-notice-question">
+                    <p class="ours-question1"> 提交回执单后什么时候可以返现？</p>
+                    <div class="ours-answer">
+                        A：一般情况下，2-3天即可审核完成，
+                        如遇到特殊情况下以及节假日，可能会超时。
+                        如果审核时间超过5天，可将回单截图 发送给客服，
+                        确认成功，可领取一个惊喜红包。（节假日除外）
+                    </div>
+                </div>
+                <div class="ours-notice-question">
+                    <p class="ours-question1">回执单填写错误，如何修改？</p>
+                    <div class="ours-answer">
+                        A：如果回执单填写错误，请联系客服驳回，重新修改后再上传。
+                    </div>
+                </div>
+                <div class="ours-notice-question">
+                    <p class="ours-question1"> 怎么查询返现进度？</p>
+                    <div class="ours-answer">
+                        A：您可以点击进入账户中心，在回单记录中进行查询返现进度。若遇到不可描述问题，请联系在线客服。
+                    </div>
+                </div>
+                <div class="ours-notice-question">
+                    <p class="ours-question1"> 手机收不到验证码怎么办？</p>
+                    <div class="ours-answer">
+                        A：短信验证码发送需要一段时间，请耐心等待或尝试重新发送。如果仍收不到验证码，
+                        请联系在线客服或者电话客服，在确 认您的身份后，客服会告知您的验证码。
+                    </div>
+                </div>
+                <div class="ours-notice-question">
+                    <p class="ours-question1"> 之前注册过的理财平台，通过你们的网站投资，也能返利吗？</p>
+                    <div class="ours-answer">
+                        A：不能，用户首投必须是全新用户：手机号、身份证都未在理财平台注册过的新用户。
+                        在小猪返利上参加活动的平台跑路了怎么办？
+                    </div>
+                </div>
+                <div class="ours-notice-question">
+                    <p class="ours-question1"> 之前注册过的理财平台，通过你们的网站投资，也能返利吗？</p>
+                    <div class="ours-answer">
+                        A：第一、小猪返利拥有专业严格的风控审核体系流程，
+                        能进入小猪返利的都是较优质的平台，跑路的可能性极低。
+                        第二、 小猪返利对每个平台都有进行客观的风控评分，
+                        用户可以直接看到评分制度及平台业内排名，风控指数越高安全性相对越高 。但不能保证100%安全性。
+                        第三、望各位用户根据自己的风险等级选择相对的平台及产品，不排除活动平台/倒闭的风险，
+                        小猪返利汇集多家优质平台及产品，建议：用户分散投资，降低风险。
+                        第四、小猪返利仅为信息撮合平台，本平台不存在任 何吸纳用户资金及诱导充值的情况出现，
+                        如出现意外情况，小猪返利不承担任何责任。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="ours-lk" type="text/html">
+        <div class="w ours-notice">
+            <p class="ours-notice-p">联系我们</p>
+            <div class="ours-link-box">
+                <div class="ours-link">
+                    <p>客服热线 :132-4162-7554</p>
+                    <p>在线客服QQ：736039087</p>
+                    <p>QQ群：747598151</p>
+                    <p class="ours-link-team">商务合作：合作邮箱：2155519472@qq.com </p>
+                </div>
+            </div>
+            <div class="ours-link-erwei-box">
+                <div class="ours-link-erwei">
+                    <s class="ours-link-s"></s>
+                    <p>客服二维码</p>
+                </div>
+                <div class="ours-link-erwei">
+                    <s class="ours-link-s2"></s>
+                    <p>微信公众号</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+</head>
+<body>
+<!--head开始-->
+<div class="head">
+    <div class="w head-w">
+        <img src="../main/image/logo.jpg">
+        <div class="headNav">
+            <ul class="headNav-ul js-headNav-ul">
+                <li class="js-headNav-li">
+                    <a href="../main/index.html">首页</a>
+                </li>
+                <li class="js-headNav-li">
+                    <a href="../zhuanQu/index.html"> 理财专区</a>
+                </li>
+                <li class="js-headNav-li">
+                    <a href="../jifen/index.html">积分商城</a>
+                </li>
+                <li class="js-headNav-li">
+                    <a href="../ours/index.html" class="on">关于我们</a>
+                </li>
+                <li class="js-headNav-li">
+                    <a href="../personal/index.html"> 个人中心</a>
+                </li>
+            </ul>
+            <div class="logging">
+                <a href="../logging/index.html">登录</a>/
+                <a href="../sign/index.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--head结束-->
+<!--fixed开始-->
+<div class="fixed js-fixed">
+    <a class="fixed-link js-fixed-link on" data-temp-id="ours-intro">公司简介</a>
+    <a class="fixed-link js-fixed-link" data-temp-id="ours-gg" data-url="json/wzgg.json">网站公告</a>
+    <a class="fixed-link js-fixed-link" data-temp-id="ours-qs">常见问题</a>
+    <a class="fixed-link js-fixed-link" data-temp-id="ours-lk">联系我们</a>
+</div>
+
+<!--fixed结束-->
+
+<div class="ours-content js-ours-content">
+
+    <!-- shuffling开始 公司公告
+     <div class="w ours-notice">
+         <p class="ours-notice-p">网站公告</p>
+     </div>
+     shuffling结束-->
+    <!--   shuffling开始 常见问题
+    <div>
+        <div class="w ours-notice">
+            <p class="ours-notice-p">常见问题</p>
+            <div class="ours-notice-question">
+                <p class="ours-question1"> 提交回执单后什么时候可以返现？</p>
+                <div class="ours-answer">
+                    A：一般情况下，2-3天即可审核完成，
+                    如遇到特殊情况下以及节假日，可能会超时。
+                    如果审核时间超过5天，可将回单截图 发送给客服，
+                    确认成功，可领取一个惊喜红包。（节假日除外）
+                </div>
+            </div>
+            <div class="ours-notice-question">
+                <p class="ours-question1">回执单填写错误，如何修改？</p>
+                <div class="ours-answer">
+                    A：如果回执单填写错误，请联系客服驳回，重新修改后再上传。
+                </div>
+            </div>
+            <div class="ours-notice-question">
+                <p class="ours-question1"> 怎么查询返现进度？</p>
+                <div class="ours-answer">
+                    A：您可以点击进入账户中心，在回单记录中进行查询返现进度。若遇到不可描述问题，请联系在线客服。
+                </div>
+            </div>
+            <div class="ours-notice-question">
+                <p class="ours-question1"> 手机收不到验证码怎么办？</p>
+                <div class="ours-answer">
+                    A：短信验证码发送需要一段时间，请耐心等待或尝试重新发送。如果仍收不到验证码，
+                    请联系在线客服或者电话客服，在确 认您的身份后，客服会告知您的验证码。
+                </div>
+            </div>
+            <div class="ours-notice-question">
+                <p class="ours-question1"> 之前注册过的理财平台，通过你们的网站投资，也能返利吗？</p>
+                <div class="ours-answer">
+                    A：不能，用户首投必须是全新用户：手机号、身份证都未在理财平台注册过的新用户。
+                    在小猪返利上参加活动的平台跑路了怎么办？
+                </div>
+            </div>
+            <div class="ours-notice-question">
+                <p class="ours-question1"> 之前注册过的理财平台，通过你们的网站投资，也能返利吗？</p>
+                <div class="ours-answer">
+                    A：第一、小猪返利拥有专业严格的风控审核体系流程，
+                    能进入小猪返利的都是较优质的平台，跑路的可能性极低。
+                    第二、 小猪返利对每个平台都有进行客观的风控评分，
+                    用户可以直接看到评分制度及平台业内排名，风控指数越高安全性相对越高 。但不能保证100%安全性。
+                    第三、望各位用户根据自己的风险等级选择相对的平台及产品，不排除活动平台/倒闭的风险，
+                    小猪返利汇集多家优质平台及产品，建议：用户分散投资，降低风险。
+                    第四、小猪返利仅为信息撮合平台，本平台不存在任 何吸纳用户资金及诱导充值的情况出现，
+                    如出现意外情况，小猪返利不承担任何责任。
+                </div>
+            </div>
+        </div>
+    </div>
+     shuffling结束 常见问题-->
+    <!--shuffling开始 联系我们-->
+    <div class="w ours-notice">
+        <p class="ours-notice-p">联系我们</p>
+        <div class="ours-link-box">
+            <div class="ours-link">
+                <p>客服热线 :132-4162-7554</p>
+                <p>在线客服QQ：736039087</p>
+                <p>QQ群：747598151</p>
+                <p class="ours-link-team">商务合作：合作邮箱：2155519472@qq.com </p>
+            </div>
+        </div>
+        <div class="ours-link-erwei-box">
+            <div class="ours-link-erwei">
+                <s class="ours-link-s"></s>
+                <p>客服二维码</p>
+            </div>
+            <div class="ours-link-erwei">
+                <s class="ours-link-s2"></s>
+                <p>微信公众号</p>
+            </div>
+        </div>
+    </div>
+    <!--shuffling结束-->
+</div>
+
+<!--foot开始-->
+<div class="foot">
+    <table class="foot-link">
+        <tr class="blod">
+            <td><a class="color2" href="../ours/index.html" target="_blank">关于我们</a></td>
+            <td><a class="color2" href="../ours/index.html" target="_blank">帮助中心</a></td>
+            <td><a class="color2" href="javascript:;">广告组服务</a></td>
+            <td><a class="color2" href="javascript:;">服务时间</a></td>
+            <td><a class="color2" href="javascript:;">联系我们</a></td>
+        </tr>
+        <tr>
+            <td><a href="../ours/index.html" class="color3" target="_blank">了解我们</a></td>
+            <td><a href="#" class="color3" target="_blank">常见问题</a></td>
+            <td><a href="../adLog/index.html" class="color3" target="_blank">广告组登录</a></td>
+            <td><a href="javascript:;" class="color3">9:00-18:00</a></td>
+            <td><a href="javascript:;" class="color3">15366481632</a></td>
+        </tr>
+        <tr>
+            <td><a href="../ours/index.html" class="color3" target="_blank">新手上路</a></td>
+            <td><a href="../adsign/index.html" class="color3" target="_blank">广告组注册</a></td>
+        </tr>
+    </table>
+    <div class="erweima">
+        <img src="../main/image/erwei.png">
+        <p>客服二维码</p>
+    </div>
+    <div class="erweima weixin">
+        <img src="../main/image/gongzhong.jpg">
+        <p>微信公众号</p>
+    </div>
+
+</div>
+<!--foot结束-->
+</body>
+
+</html>

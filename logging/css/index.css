@@ -1,0 +1,116 @@
+
+/*--content开始--*/
+.head{
+    border-bottom: 1px solid #e6e6e6;
+}
+.foot{
+    margin-top: 20px;
+}
+.logging>a.on{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    color: #ffffff;
+    background: linear-gradient(#ffd62296, #fd8810);
+}
+.content{
+    width: 100%;
+    position: relative;
+    background-image: url(../image/bg-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+
+
+}
+.logging-text{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0477E7;
+    border-bottom: 1px solid #0477E7;
+    letter-spacing: 6px;
+    padding-right: 188px;
+    padding-bottom:  10px;
+    margin-bottom: 30px;
+}
+.logging-input{
+    position: relative;
+    margin-bottom: 20px;
+}
+.logging-input>input{
+    width: 200px;
+    height:  33px;
+    line-height: 33px;
+    font-size: 14px;
+    padding-left:30px;
+    padding-right:  10px;
+    border: 1px solid #EDEDED;
+    font-family: Mcosft yahe;
+}
+.logging-input:before{
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 25px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: greenyellow;*/
+}
+.logging-input.logging-first-input:before {
+    background-image: url("../image/username.png");
+}
+.logging-input.logging-two-input:before {
+    background-image: url("../image/password.png");
+}
+
+.logging-auto{
+    margin-bottom: 20px;
+}
+.logging-auto>span{
+    color: #F8994A;
+    font-size: 14px;
+    vertical-align:  middle;
+    padding: 5px;
+}
+.logging-but{
+    font-size:  14px;
+    border-bottom:  1px solid #cee5f3;
+}
+.logging-but>input[name=login]{
+    background-color: #0276E5;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 48px;
+    cursor: pointer;
+    letter-spacing: 8px;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.lost{
+    font-size: 14px;
+    color: #8E8E8E;
+    display:  inline-block;
+    margin-top: 40px;
+}
+.lost>a:first-child{
+    margin-right: 112px;
+}
+.lost>a:hover{
+    color: #878787;
+}
+.lost>a{
+    cursor: pointer;
+    color: #878787;
+}
+.formbox{
+    float: right;
+    background-color: white;
+    padding: 20px 20px;
+    display: inline-block;
+    margin: 80px 15%;
+}

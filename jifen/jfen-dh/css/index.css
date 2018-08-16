@@ -1,0 +1,268 @@
+/*--global开始--*/
+.shuffling-box{
+    position: relative;
+}
+.shuffling{
+    position:  relative;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+.shuffling-div{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+    display: inline-block;
+}
+.shuffling-div.on{
+    display: inline-block;
+}
+.shuffling>div:first-child{
+    background-image: url(../../image/jf-img.jpg);
+}
+
+
+/*--integral开始--*/
+.recommend-box {
+    position: relative;
+    margin-top: 30px;
+}
+.recommend>p{
+    text-indent: 50px;
+}
+.recommend>p:first-child{
+    color: #E71600;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.recommend>p:nth-of-type(2){
+    white-space: pre;
+    letter-spacing: 2px;
+    color: gray;
+}
+.recommend.integral{text-align:  left;}
+
+.recommend.integral:before{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "";
+    width: 38px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-image: url("../../../main/image/integral.png");
+}
+.integral-product-list{
+    text-align:  center;
+    display:  inline-block;
+    padding: 4px 5px;
+    border: 1px solid #e4e4e4;
+    margin: 20px 30px 20px 0px;
+    cursor:  pointer;
+}
+
+.integral-product-list:hover{
+    box-shadow: 0 0 17px 3px #EEE;
+    color:  #898989;
+}
+.integral-product-list-img{
+    display: inline-block;
+    width: 180px;
+    height: 66px;
+    background-size: contain;
+    margin: 40px 20px;
+    background-repeat:no-repeat;
+}
+.integral-product-list:first-child .integral-product-list-img{
+    background-image: url("../../../main/image/jifeng1.png");
+}
+
+.integral-product-list-p{
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+.integral-product-list-num>span{
+    font-size: 14px;
+    line-height: 40px;
+}
+.integral-product-list-num>span:nth-of-type(2){
+    margin-right: 20px;
+}
+.integral-product-list-num>span:nth-of-type(1),
+.integral-product-list-num>span:nth-of-type(2){
+    color: #E44D30;
+}
+.integral-product{
+    font-size:  0;
+    display:  inline-block;
+}
+.integral-product-list.mag20{
+    margin-top: 20px;
+}
+
+/*--not global开始--*/
+.integral-exchange{
+    display: inline-block;
+    vertical-align:  top;
+    padding: 40px 10px;
+    text-align:  center;
+}
+.integral-exchange-box{
+    display: inline-block;
+}
+.integral-exchange-p{
+    font-size: 16px;
+    line-height:  30px;
+    text-align:  left;
+}
+.integral-exchange-buttom{
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 5px 50px;
+    letter-spacing: 2px;
+    margin-top:  30px;
+    font-weight:  600;
+    display:  inline-block;
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+    cursor: pointer;
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+}
+.integral-exchange-text{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    width:  500px;
+    text-align:  left;
+}
+.recommend-box1{
+    display:  inline-block;
+    padding-bottom: 30px;
+}
+.recommend-box2{
+    text-align: center;
+}
+
+
+
+/*--jf-dh-fixed开始 弹框--*/
+.lc-fx-fixed{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(173, 173, 173)\9;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* display:  none; */
+    text-align:  center;
+}
+.jf-dh-pop{
+    font-size: 16px;
+}
+.jf-dh-pop>p{
+    line-height: 36px;
+    border-bottom: 1px solid #c5c5c5;
+    text-align:  left;
+    text-indent:  20px;
+}
+.lc-fx-pop-buttom{
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 0 10px;
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #ffd622, endColorstr = #fd8810);
+    margin: 20px auto 50px;
+    width: 204px;
+    cursor: pointer;
+}
+.jf-dh-pop{
+    display: inline-block;
+    background-color: white;
+    padding:  20px;
+    margin-top:  80px;
+}
+.submit-from1 input {
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-shadow: inset 1px 1px 8px 0px #3333336b;
+    cursor: pointer;
+    display:  block;
+    margin: 10px;
+    text-indent:  20px;
+    width: 224px;
+    box-sizing: border-box;
+}
+.submit-from1{
+    text-align: left;
+    position: relative;
+}
+.submit-from1::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left:  17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.submit-from1:nth-of-type(1)::before {
+    background-image: url("../img/id (1).svg");
+}
+.submit-from1:nth-of-type(2)::before {
+    background-image: url("../img/id (2).svg");
+}
+.submit-from1:nth-of-type(3)::before {
+    background-image: url("../img/id (3).svg");
+}
+.submit-from1:nth-of-type(4)::before {
+    background-image: url("../img/id (4).svg");
+}
+.submit-from{
+    display: inline-block;
+    text-align:  center;
+    margin-top: 10px;
+}
+
+
+/*--jf-dh-fixed开始 提现弹框--*/
+
+.lc-fx-fixed>.takeSuccse{
+    display:  none;
+}
+
+
+/*--takeSuccse提现成功--*/
+.takeSuccse{
+    display: flex;
+    width: 400px;
+    height: 480px;
+    margin: 80px auto 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.takeSuccse.take-1{
+    background-image: url(../../../personal/image/takesuccse.jpg);
+}

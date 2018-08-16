@@ -1,0 +1,174 @@
+
+/*--content开始--*/
+.head{
+    border-bottom: 1px solid #e6e6e6;
+}
+.foot{
+    margin-top: 20px;
+}
+.logging>a.on{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background: linear-gradient(#ffd62296, #fd8810);
+    background: -ms-linear-gradient(top, rgba(255, 223, 26, 0.33),#fd8810);
+    background: -ms-linear-gradient(top,#ffd622, #fd8810);
+    background: linear-gradient(#ffd622, #fd8810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #ffd622, endColorstr = #fd8810);
+}
+.content{
+    width: 100%;
+    position: relative;
+    background-image: url(../image/bg-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+
+}
+.logging-text{
+    font-size: 16px;
+    font-weight: 800;
+    color: #0477E7;
+    border-bottom: 1px solid #0477E7;
+    letter-spacing: 6px;
+    padding-bottom:  10px;
+    margin-bottom: 30px;
+}
+.logging-input{
+    position: relative;
+    margin-bottom: 20px;
+    vertical-align:  middle;
+    border: 1px solid #EDEDED;
+}
+.logging-input>input{
+    font-size: 14px;
+    height: 33px;
+    line-height:  33px;
+    padding-left:30px;
+    padding-right:  10px;
+    font-family: Mcosft yahe;
+    vertical-align:  middle;
+    width: 180px;
+    display:  inline-block;
+}
+.logging-input:nth-of-type(3)>input{
+    padding-left:5px;
+    width: 273px;
+}
+.logging-input:first-child+div+div>input{
+    padding-left:5px;
+    width: 273px;
+}
+.logging-input:first-child>input{
+    padding-left:5px;
+    width: 273px;
+}
+.logging-input:first-child>input{
+    width: 247px;
+}
+.logging-input:before{
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 25px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.logging-input.first:before {
+    background-image: url("../image/username.png");
+}
+.logging-input.two:before {
+    background-image: url("../image/password.png");
+}
+.logging-auto{
+    margin-bottom: 20px;
+}
+.logging-auto>span{
+    color: #F8994A;
+    font-size: 14px;
+    vertical-align:  middle;
+    padding: 5px;
+}
+.logging-but{
+    font-size:  14px;
+    border-bottom:  1px solid #cee5f3;
+    text-align:  center;
+    line-height: 38px;
+}
+.logging-but>input{
+    background-color: #0276E5;
+    color: white;
+    border-radius: 5px;
+    line-height: 38px;
+    cursor: pointer;
+    letter-spacing: 8px;
+    padding: 0 81px;
+    font-size: 14px;
+    display:  block;
+    margin: 10px auto;
+    font-weight:  600;
+}
+.lost{
+    font-size: 14px;
+    color: #8E8E8E;
+    display:  inline-block;
+    margin-top: 40px;
+}
+.lost>a:first-child{
+    margin-right: 112px;
+}
+.lost>a:hover{
+    color: #878787;
+}
+.lost>a{
+    color: #878787;
+}
+.formbox{
+    float: right;
+    background-color:  white;
+    padding: 20px 20px;
+    display:  inline-block;
+    margin: 80px 15% 100px;
+}
+
+
+/*——sign——*/
+.password-img{
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+    background-color: #666666;
+    vertical-align:  middle;
+}
+.logging-input>.sign-password{
+}
+.sign-xy{
+    color: #333333;
+}
+.invite{
+    font-size: 14px;
+}
+.invite>p{
+    /*padding-left: 30px;*/
+    color: #333333;
+    line-height: 40px;
+    margin-top:  10px;
+}
+.invite>p:before{
+    content: '>';
+    font-size: 16px;
+}
+.invite>input{
+    border: 1px solid #EDEDED;
+    line-height: 33px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 78px;
+    font-family: Mcosft yahe;
+    vertical-align: middle;
+    width: 179px;
+    height:  33px;
+}
