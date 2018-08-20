@@ -92,42 +92,6 @@ var main = function () {
                $('.js-dot').eq(indext-1).addClass('on');
            }
    };*/
-   /* var dotShuffling = function () {
-        $('.js-dot').mouseenter(function(){
-            clearInterval(timerShuffling);
-            $('.js-dot').removeClass('on');
-            $(this).addClass('on');
-            var imgIndex=$('.js-shuffling-div.on').attr('shuffingid')-1;
-            var dotIndex=$(this).index();
-            var _this = $(this);
-            var boxWidth = $('.js-shuffling').width();
-            var curr = $('.js-shuffling').scrollLeft();
-            if(imgIndex>dotIndex){
-                var dotIndex=_this.index()+1;
-                $('.js-shuffling-div:first').before($('.js-shuffling-div[shuffingid='+dotIndex+']'));
-                console.log($('.js-shuffling-div[shuffingid='+dotIndex+1+']'));
-                $('.js-shuffling').scrollLeft(boxWidth);
-                var curr = $('.js-shuffling').scrollLeft();
-                $('.js-shuffling').animate({scrollLeft:curr-boxWidth},500);
-            }else if(imgIndex<dotIndex) {
-                $('.js-shuffling').scrollLeft(boxWidth);
-                var curr = $('.js-shuffling').scrollLeft();
-                $('.js-shuffling').animate({scrollLeft:curr+boxWidth},500,function () {
-                    var dotIndex=_this.index();
-                    $('.js-shuffling-div:lt('+dotIndex+')').appendTo($('.js-shuffling'));
-                    $('.js-shuffling').scrollLeft(0);
-                });
-                // $('.js-shuffling').animate({scrollLeft:curr+boxWidth},500,function() {
-                //     $('.js-shuffling-div.on').appendTo($('.js-shuffling'));
-                //     $('.js-shuffling-div:first').addClass('on').siblings().removeClass('on');
-                //     $('.js-shuffling').scrollLeft(0)
-                // });
-            }
-        });
-        $('.js-dot').mouseleave(function(){
-            shuffling();
-        });
-    };*/
     /**
      * 公告轮播
      */

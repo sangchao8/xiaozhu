@@ -47,7 +47,7 @@ var main = function () {
          */
         $('.js-ours-content').delegate('.js-next-page','click',function () {
             var currPage = $(this).parents('.js-invite-record-page').attr('currpage');
-            $.getJSON('json/wzgg.json',{currPage:currPage+1},function (data) {
+            $.getJSON('json/wzgg.json',{currPage:pageNum+1},function (data) {
                 var gg = template('ours-gg', data);
                 $('.js-ours-content').html(gg);
             });

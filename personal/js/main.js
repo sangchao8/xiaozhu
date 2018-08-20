@@ -45,7 +45,6 @@ var main = function () {
         $('.js-persional-main').delegate('.js-text-r-f-but','click',function (){
             var formName =$(".js-persional-main form").attr("id");
             var formData = $(formName).serialize();
-            // console.log(formData);
             var $this = $(this);
             $.ajax({
                 type:'post',
